@@ -3,6 +3,7 @@ function f = comp(varargin)
 % FUNC = COMP(FUNCTIONS+)
 %   Form the composition of FUNCTIONS, resulting in FUNC.
 %
+import functional.*; % Added by node for package support.
 
   functions = varargin;
   function varargout = func(varargin)

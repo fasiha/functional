@@ -4,6 +4,7 @@ function func = ftest(pred, t, f)
 %   Make a function FUNC that takes any number of ARGS and invokes
 %   TRUE_FUNC(ARGS) if PREDICATE(ARGS), otherwise invokes FALSE_FUNC(ARGS).
 %
+import functional.*; % Added by node for package support.
 
   function varargout = ftestFunc(varargin)
     if pred(varargin{:})

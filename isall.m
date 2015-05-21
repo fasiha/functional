@@ -7,6 +7,7 @@ function b = isall(list, func)
 %   result is used instead - thus if every application of FUNC across ARRAY
 %   is true, then ISALL(ARRAY, FUNC) is true.
 %
+import functional.*; % Added by node for package support.
 
   if nargin < 2, func = @(x) x; end
   % We don't use foldl so as to incur better performance via short circuit.

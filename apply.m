@@ -6,6 +6,7 @@ function apply(array, func)
 %   Example:
 %     apply(1:10, @disp) % Display every element of the array.
 %
+import functional.*; % Added by node for package support.
 
   if iscell(array)
     for i = 1:numel(array)

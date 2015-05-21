@@ -7,6 +7,7 @@ function varargout = select(array, func)
 % [PASSED, REJECTED] = SELECT(ARRAY, PRED)
 %   As above, but return the elements that do not pass PRED in REJECTED.
 %
+import functional.*; % Added by node for package support.
 
   idx = isTrue(array, func);
   varargout{1} = array(idx);

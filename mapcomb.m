@@ -34,6 +34,7 @@ function varargout = mapcomb(arrays, varargin)
 %
 %       All the normal OPTIONS to map are available.
 %
+import functional.*; % Added by node for package support.
 
   if ~iscell(arrays)
     error('MapComb:Arguments', 'Array input (first argument) must be a cell array.');

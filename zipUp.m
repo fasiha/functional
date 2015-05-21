@@ -5,6 +5,7 @@ function arr = zipUp(varargin)
 %   arrays), and N is MIN(NUMEL(A)) where A ranges across INPUT_ARRAYs.
 %   The element ARRAY{C,D} is the C'th element of input array D.
 %
+import functional.*; % Added by node for package support.
 
   if nargin == 0
     arr = [];

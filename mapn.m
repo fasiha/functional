@@ -5,6 +5,7 @@ function varargout = mapn(array, start, varargin)
 %   position of the array element we are mapping across instead of the
 %   actual value.  Positions start counting at start.
 %
+import functional.*; % Added by node for package support.
 
   [funclist, varargin] = select(varargin, @islambda);
 

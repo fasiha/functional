@@ -13,6 +13,7 @@ function varargout = mapmany(arrays, varargin)
 %   also being the same.  MAP(ARRAY, ...) and MAPMANY({ARRAY}, ...) are
 %   equivalent.  See MAP for more information.
 %
+import functional.*; % Added by node for package support.
 
   if ~iscell(arrays)
     error('MapMany:Arguments', 'Array input (first argument) must be a cell array.');

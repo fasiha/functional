@@ -9,6 +9,7 @@ function varargout = reject(array, func)
 % [REJECTED, PASSED] = REJECT(ARRAY, PRED)
 %   As above, but return the elements that do not pass PRED in PASSED.
 %
+import functional.*; % Added by node for package support.
 
   [varargout{1:(max(nargout,1))}] = select(array, negate(func));
 end

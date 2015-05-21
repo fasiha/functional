@@ -6,6 +6,7 @@ function f = indexAt(arrays)
 %     FUNC(i, idx)
 %   gets the i'th element of the idx'th array.
 %
+import functional.*; % Added by node for package support.
 
   function v = indexFunc(i, idx)
     arr = arrays{idx};

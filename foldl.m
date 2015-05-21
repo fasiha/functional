@@ -20,6 +20,7 @@ function r = foldl(list, identity, func)
 %     all(array) == foldl(array, true, @(a,b) a && b)
 %     any(array) == foldl(array, false, @(a,b) a || b)
 %
+import functional.*; % Added by node for package support.
 
   if isempty(list)
     r = identity;

@@ -21,6 +21,7 @@ function applycomb(arrays, varargin)
 %         we would invoke someFunc with (1, 3), (1, 4), (1, 5), (2, 3),
 %         (2, 4), (2, 5) -- ie `opposite' of what is normal.
 %
+import functional.*; % Added by node for package support.
 
   if ~iscell(arrays)
     error('ApplyComb:Arguments', 'Array input (first argument) must be a cell array.');

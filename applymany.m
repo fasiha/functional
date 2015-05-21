@@ -12,6 +12,7 @@ function applymany(arrays, varargin)
 %   arity functions.  APPLY(ARRAY, ...) and APPLYMANY({ARRAY}, ...) are
 %   equivalent.
 %
+import functional.*; % Added by node for package support.
 
   if ~iscell(arrays)
     error('ApplyMany:Arguments', 'Array input (first argument) must be a cell array.');

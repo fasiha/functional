@@ -5,6 +5,7 @@ function b = memberof(list, item, func)
 %   Returns true if ITEM is an element of ARRAY.  Equality is tested using
 %   FUNC.  If FUNC isn't provided, it defaults to @(i, j) = (i == j).
 %
+import functional.*; % Added by node for package support.
 
   if isempty(item)
     b = 0;

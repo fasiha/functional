@@ -17,6 +17,7 @@ function func = flip(f, varargin)
 %   the form:
 %     INDEX_SET = PROCESSOR(VARARGIN)
 %
+import functional.*; % Added by node for package support.
 
   function varargout = reverseArgs(varargin)
     arguments = varargin(end:-1:1);

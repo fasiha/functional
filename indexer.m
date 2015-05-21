@@ -13,6 +13,7 @@ function result = indexer(func, index, increment, ord)
 %   Note that the return function can handle multiple input and multiple
 %   outputs.
 %
+import functional.*; % Added by node for package support.
 
   if nargin < 1
     error('Indexer:Arguments', 'Indexer requires a function as an input.');

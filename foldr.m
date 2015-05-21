@@ -14,6 +14,7 @@ function r = foldr(list, identity, func)
 %   these libraries, whereas usually FOLDL is tail recursive and thus more
 %   efficient on most platforms.
 %
+import functional.*; % Added by node for package support.
 
   if isempty(list)
     r = identity;

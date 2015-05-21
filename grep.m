@@ -15,6 +15,7 @@ function f = grep(rgx, varargin)
 %         Check to make sure the options to FUNC are strings, otherwise
 %         just hafe FUNC return false.
 %         
+import functional.*; % Added by node for package support.
   icase = false;
   rev   = false;
   safe  = false;

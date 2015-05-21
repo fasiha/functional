@@ -8,6 +8,7 @@ function func = scurry(varargin)
 %   Note that if ARGS has the appropriate number of arguments, then FUNC()
 %   returns the formatted string.
 %
+import functional.*; % Added by node for package support.
 
   if nargin == 0
     func = @scurry;

@@ -16,6 +16,7 @@ function func = curry(varargin)
 % FUNC = CURRY(N)
 %   This returns a function that waits for F to invoke CURRY(N, F, ...).
 %
+import functional.*; % Added by node for package support.
 
   if nargin == 0
     func = @curry;

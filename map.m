@@ -20,6 +20,7 @@ function varargout = map(array, varargin)
 %   OUTPUT being composed of the first output of FUNC.  Any number of TYPE
 %   values may be given, and are applied to each OUTPUT as above.
 %
+import functional.*; % Added by node for package support.
 
   [ctype, cfunc] = deal({}, {});
   types = '^cell|double|single|(u?int(8|16|32|64))|char|struct|id|logical$';

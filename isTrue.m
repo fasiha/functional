@@ -8,6 +8,7 @@ function b = isTrue(array, pred)
 %   whether ARRAY contains actual data or cell references and allows
 %   arbitrary PRED functions.
 %
+import functional.*; % Added by node for package support.
 
   if nargin <= 1, pred = @(i) i; end
 
