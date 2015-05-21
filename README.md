@@ -20,4 +20,6 @@ The main problem is that code inside a package has to refer to other code in the
 Since the original Library lacked a test suite, I can only discover errors in packagization as I use the Library. Please file an issue on Github if you find a problem.
 
 ## License
-The original library was released under an unknown license.
+While the original submission to File Exchange did not specify a license, personal communication from Matthew Maycock dated 2015/5/21 indicates it was released under "Public domain; no warranty / guarantee of any kind".
+
+This repository, as derivative work, is also released into the public domain.
